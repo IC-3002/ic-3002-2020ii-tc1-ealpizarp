@@ -11,20 +11,6 @@ def factorial_iterativo(n):
         factorial = factorial * i
     return factorial
 
-def factorial_recursivo(n):
-    factorial = 1
-    return factorial_recursivo_aux(factorial, n)
-
-def factorial_recursivo_aux(factorial, n):
-    if n == 0:
-        return factorial
-        
-    else:
-
-        factorial = factorial * n
-
-        return factorial_recursivo_aux(factorial, n - 1)
-
 def e_lineal(n):
     e_aprox = 0 
 
@@ -39,7 +25,3 @@ def e_lineal(n):
         e_aprox = e_aprox + (1 / (factorial))
 
     return e_aprox
-
-print(e_cuadratica(50))
-
-print(e_lineal(50))
